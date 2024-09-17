@@ -1,0 +1,23 @@
+dict.pop('bodytype')
+dict.popitem()
+del dict['height']
+del dict
+dict.clear
+dict.update({'favoritefood':'pizza'})
+
+print(dict.items())
+
+for value in dict.values():
+    print(value)
+
+for key,value in dict.items():
+    print(key,value)
+
+if 'Felipe' in dict.values():
+    print('❗❗❗')
+
+details ={}
+for i in range (5):
+    name = input('Please enter your name:')
+    phone_number = input ('Please enter your phone number:')
+    details[name]=phone_number
