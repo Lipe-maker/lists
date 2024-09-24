@@ -1,0 +1,14 @@
+import pgzrun
+WIDTH=750
+HEIGHT=500
+TITLE=('cool_colors')
+
+r=110
+g=254
+b=83
+
+def draw():
+    Rectangle = Rect(250,250,225,150)
+    screen.fill((r,g,b))
+    screen.draw.filled_rect (Rectangle,'lime green')
+pgzrun.go()
