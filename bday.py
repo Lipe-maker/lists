@@ -12,9 +12,8 @@ pygame.display.set_caption('Birthday Greeting Card')
 img=pygame.image.load('bday card.jpg')
 image = pygame.transform.scale(img, (WIDTH,HEIGHT))
 
-
 while(True):
-    font=pygame.font.SysFont('Times New Roman',72)
+    font=pygame.font.SysFont("Times New Roman",72)
     text=font.render('Happy',True,(0,0,0))
     text2=font.render('Birthday',True,(0,0,0))
     display_surface.fill((255,255,255))
@@ -25,3 +24,21 @@ while(True):
     time.sleep(2)
 
     image2=pygame.image.load('birthday-card2.jpg')
+    font2=pygame.font.SysFont("Arial",36)
+    text3=font2.render('Wish you a bright future ahead',True,(222,0,0))
+    display_surface.fill((255,255,255))
+    display_surface.blit(image2,(0,0))
+    display_surface.blit(text3,(30,30))
+    pygame.display.update()
+    time.sleep(2)
+
+    image3=pygame.image.load('bestcake.png')
+    image3 = pygame.transform.scale(img, (WIDTH,HEIGHT))
+    display_surface.fill((255,255,255))
+    display_surface.blit(image3,(0,0))
+    pygame.display.update()
+    time.sleep(2)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
